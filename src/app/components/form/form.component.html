@@ -1,0 +1,9 @@
+<form (ngSubmit)="creatUser();" autocomplete="off">
+  <label for="name">Name:</label>
+  <input type="text" name="name" [(ngModel)]="user.name">
+  <label for="email">Email:</label>
+  <input type="text" name="email" [(ngModel)]="user.email">
+  <input type="submit" name="" value="Register">
+
+</form>
+<h1 *ngIf="user.name.length">{{ user.name | mr}}</h1>

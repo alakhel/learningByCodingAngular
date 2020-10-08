@@ -1,0 +1,9 @@
+<h6>{{data.heading}}</h6>
+
+<p>{{data.description}}</p>
+<div *ngIf="data.related.length">
+    <!--if(pages.length) show div-->
+    <ul *ngFor="let v of data.related | pSort:'asc'">
+        <li>{{v}}</li>
+    </ul>
+</div>
